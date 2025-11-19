@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style 3.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="top">
+      <div class="logo">
+        <img src="img/logo.png" alt="Grøn Hverdag logo">
+      </div>
+
+      <nav aria-label="Hovedmenu">
+        <ul>
+          <li><a href="#">Forside</a></li>
+          <li><a href="#">Bæredygtige vaner</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="kontaktform">
+      <h1>Kontakt os</h1>
+
+      <p class="kontakt-tekst">
+        Har du gode tips til, hvordan vi alle kan leve lidt mere bæredygtigt i hverdagen?
+        Måske har du erfaring med at mindske madspild, genbruge mere – eller du kender
+        en lokal idé, der fortjener at blive delt?
+      </p>
+
+      <form>
+        <label class="visually-hidden" for="navn">Navn</label>
+        <input id="navn" type="text" placeholder="Navn" required autocomplete="name">
+
+        <label class="visually-hidden" for="alder">Alder</label>
+        <input id="alder" type="text" placeholder="Alder">
+
+        <label class="visually-hidden" for="tel">Telefon</label>
+        <input id="tel" type="tel" placeholder="Telefon" autocomplete="tel">
+
+        <label class="visually-hidden" for="adresse">Adresse</label>
+        <input id="adresse" type="text" placeholder="Adresse" autocomplete="street-address">
+
+    
+        <label class="visually-hidden" for="region">Vælg region</label>
+        <select id="region">
+          <option value="" selected disabled>Vælg region</option>
+          <option value="syddanmark">Syddanmark</option>
+          <option value="sjaelland">Sjælland</option>
+          <option value="hovedstaden">Hovedstaden</option>
+          <option value="nordjylland">Nordjylland</option>
+          <option value="midtjylland">Midtjylland</option>
+        </select>
+
+        
+        <fieldset class="interesse">
+          <legend>Vælg interesseområde</legend>
+
+          <div>
+            <input type="radio" id="genbrug" name="interesse">
+            <label for="genbrug">Genbrug</label>
+          </div>
+
+          <div>
+            <input type="radio" id="affald" name="interesse">
+            <label for="affald">Affaldssortering</label>
+          </div>
+
+          <div>
+            <input type="radio" id="gron" name="interesse">
+            <label for="gron">Grøn tankegang</label>
+          </div>
+        </fieldset>
+
+        <label for="besked">Besked</label>
+        <textarea id="besked" cols="30" rows="6" placeholder="Skriv din besked her"></textarea>
+
+        <fieldset class="telefonkontakt">
+          <legend>Må vi kontakte dig på telefon?</legend>
+
+          <input id="ja" type="radio" name="kontakt">
+          <label for="ja">Ja</label>
+
+          <input id="nej" type="radio" name="kontakt">
+          <label for="nej">Nej</label>
+        </fieldset>
+
+        <input type="submit" name="submit" value="Send besked">
+      </form>
+    </section>
+  </main>
+
+  <footer id="kontakt">
+    <nav aria-label="Bundmenu">
+      <ul>
+        <li><a href="#">© 2025 Grøn Hverdag</a></li>
+        <li><a href="#">Forside</a></li>
+        <li><a href="#">Bæredygtige vaner</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

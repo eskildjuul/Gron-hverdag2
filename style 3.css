@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f0dc;  
+}
+
+header {
+  background-color: #0b4628;   
+}
+
+.top {
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 70px;
+  height: auto;
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #f8f0dc;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 3rem;
+}
+
+h1 {
+  font-family: Helvetica;
+  color: #0b4628;
+}
+
+.kontaktform {
+  width: 100%;
+  max-width: 720px;
+  background-color: #f3f5f4;     
+  border: 4px solid #1f5b33;     
+  border-radius: 4px;
+  padding: 1.8rem 2rem 2.2rem;
+  margin-top: 2.5rem;
+}
+
+.kontaktform h1 {
+  margin-top: 0;
+}
+
+.kontakt-tekst {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+
+input[type=text], input[type=email], input[type=tel], select, textarea {
+  width: 100%;
+  padding: 0.7em 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 0.4em;
+  margin-bottom: 1em;
+  font: inherit;
+}
+
+select,
+input[type=radio], input[type=submit] {
+  cursor: pointer;
+}
+
+fieldset {
+  border: none;
+  margin: 0 0 1em;
+  padding: 0.2em 0 0.8em;
+}
+
+.interesse legend, .telefonkontakt legend {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+
+.interesse div {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+
+input[type=submit] {
+  background-color: #0b4628;
+  color: white;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+input[type=submit]:hover {
+  background-color: green;
+}
+
+::placeholder {
+  color: #555;
+}
+
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+footer {
+  background-color: #0b4628;
+  padding: 1rem 1.5rem 2rem;
+  margin-top: auto;
+}
+
+footer nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: #f8f0dc;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus-visible {
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 850px) {
+
+  .kontaktform {
+    margin-top: 1.5rem;
+    padding: 1.2rem 1rem 1.6rem;
+  }
+}
