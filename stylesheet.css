@@ -65,7 +65,6 @@ main {
   object-fit: cover;
 }
 
-
 .intro {
   margin: 0 auto;
   padding: 1rem 1rem 0.5rem;
@@ -77,7 +76,6 @@ main {
   font-size: 1rem;
   text-decoration: underline;
 }
-
 
 .ikoner {
   margin: 0 auto;
@@ -176,9 +174,6 @@ main {
 
 /* Bæredygtige vaner underside */
 
-main {
-  background-color: #f8f0dc;  
-}
 
 .vaner-intro {
   max-width: 900px;
@@ -272,7 +267,7 @@ main {
 
 /* Kontakt formular */
 
-main {
+.kontakt-main {
 background-color: #f8f0dc;
   flex: 1;
   display: flex;
