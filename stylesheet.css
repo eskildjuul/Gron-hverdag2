@@ -133,23 +133,6 @@ main {
   width: 1px;
 }
 
-footer {
-  background-color: #0b4628;
-  padding: 1rem 1.5rem 2rem;
-  margin-top: auto;
-}
-
-footer nav ul {
-  justify-content: flex-start;
-  width: 100%;
-}
-
-footer a {
-  color: #f8f0dc;
-  text-decoration: none;
-}
-
-
 /* Tablet og op */
 
 @media (min-width: 600px) {
@@ -190,6 +173,104 @@ footer a {
   }
 
 }
+
+/* Bæredygtige vaner underside */
+
+main {
+  background-color: #f8f0dc;  
+}
+
+.vaner-intro {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 1.5rem;
+  text-align: center;
+  color: #0b4628;
+}
+
+.vaner-intro h1 {
+  font-size: 1rem;
+  text-decoration: underline;
+  margin-bottom: 1.5rem;
+}
+
+.vaner-intro h2 {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.vaner-liste {
+  max-width: 900px;
+  margin: 2rem auto 4rem;
+  padding: 0 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.vane {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.vane-ikon img {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.vane-tekst {
+  max-width: 600px;
+}
+
+.vane-tekst h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0b4628;
+}
+
+.vane-tekst p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+@media (min-width: 700px) {
+  .vaner-liste {
+    gap: 3.5rem;
+  }
+
+  .vane {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+
+  .vane-ikon img {
+    margin-bottom: 0;
+  }
+
+  .vane-tekst {
+    max-width: none;
+  }
+}
+
 
 
 
